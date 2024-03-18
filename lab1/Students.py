@@ -11,7 +11,6 @@ class Students:
         else:
             return self.name[user_id]
 
-
 # if __name__ == '__main__':
 #     students = Students()
 #     print("id", students.set_name('John'))
