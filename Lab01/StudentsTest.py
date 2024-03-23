@@ -22,6 +22,17 @@ class Test(unittest.TestCase):
         print("Finish set_name test")
         #TODO
         pass
+    
+    def get_mex(self, arr):
+        # constrain: 1. no duplicate 2. elements in the list is non-negative integer
+        lst = sorted(arr)
+        mex = 0
+        for i in lst:
+            if i == mex:
+                mex += 1
+            else:
+                break
+        return mex
 
     # test case function to check the Students.get_name function
     def test_1_get_name(self):
@@ -35,7 +46,10 @@ class Test(unittest.TestCase):
             print(f"id {id} : {name}")
         
         # additional test
-        name = self.students.get_name(len(self.user_id))
+        # find the mex id in the list
+        id = min(self.user_id)
+
+        name = self.students.get_name(self.get_mex(self.user_id))
         self.assertEqual(name, 'There is no such user')
 
         print("Finish get_name test")
