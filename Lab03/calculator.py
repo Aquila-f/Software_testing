@@ -19,7 +19,6 @@ class Calculator:
     def exp(x):
         return math.exp(x)
 
-
-if __name__ == '__main__':
+if __name__ == '__main__': # pragma: no cover
     # Calculator.add(1, '2')
     Calculator.divide(1, 0)
