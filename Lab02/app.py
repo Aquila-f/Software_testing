@@ -49,9 +49,9 @@ class Application:
 			self.mailSystem.send(x, context)
 
 
-if __name__ == "__main__":
-	app = Application()
-	app.select_next_person()
-	app.select_next_person()
-	app.select_next_person()
-	app.notify_selected()
+# if __name__ == "__main__":
+# 	app = Application()
+# 	app.select_next_person()
+# 	app.select_next_person()
+# 	app.select_next_person()
+# 	app.notify_selected()
