@@ -46,5 +46,5 @@ class ApplicationTest(unittest.TestCase):
         pass
 
 
-# if __name__ == "__main__":
-#     unittest.main()
+if __name__ == "__main__": # pragma: no cover
+    unittest.main()
